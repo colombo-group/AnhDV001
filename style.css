@@ -6,7 +6,13 @@ body{
 	margin-right: auto;
 	font-family: georgia;
 	font-size: 14px;
+
 }
+@font-face{
+	font-family:georgia;
+	src: url('font/georgia.ttf'); 
+}
+
 .top-head{
 	height: 10px;
 	background-color: #894AA3;
@@ -19,27 +25,52 @@ body{
 	list-style: none;
 }
 .head1{
-	padding-left: 715px;
+	padding-left: 700px;
+
 }
-.head1 form input{
-	border-radius: 5px 5px 5px 5px;
-	height: 25px; 
-	border-style: hidden;
-	background:url("images/123.png") no-repeat 190px 4px #ebebea;
+.search{
+    margin:auto;
+    width:210px;
+    position:relative; 
 }
+.s:focus{
+	outline: none;
+} 
+.s{
+    padding:2px;
+    width:206px;
+    height:26px;
+    border-radius:0px 0px 8px 8px;
+    border:none;
+    color:#91959e;
+    background-color:#ebebeb;
+}
+ 
+.searchsubmit{
+    position:absolute;
+    top:3px;
+    left:180px;
+    background:url(images/123.png) no-repeat center;
+    border:none;
+    width:24px;
+    height:24px;  
+}
+
 .head2{
 	padding-top: 15px;
 	height: 80px;
 	background-color: #ebebea;
+
 }
 .head2 p{
 	width:700px;
 	text-align: center;
 	margin: auto;
-	font-style: oblique;
+	font-style: italic;
 	font-size: 20px;
 	line-height: 30px;
 	color: #333333;
+
 }
 .slide{
 	height: 380px;
@@ -60,12 +91,19 @@ body{
 	padding-top: 170px;
 	margin-left: 880px;
 }
+
 .img1{
 	background:url("images/222.png") no-repeat #000;
 	width: 55px;
 	height: 55px;
 	border-radius: 30px 30px 30px 30px;
 	cursor: pointer;
+}
+.img1:focus{
+	outline: none;
+}
+.img2:focus{
+	outline: none;
 }
 .img2{
 	background:url("images/111.png") no-repeat #000;
@@ -125,11 +163,13 @@ body{
 .menu ul li{
 	display:inline;
 	margin-left: 8px;
+	
 }
 .menu ul li a{
 	text-decoration: none;
 	color:#666;
 	font-size: 15px;
+	
 }
 .menu a:hover{
 	color: #ff0000;
@@ -189,7 +229,7 @@ body{
 	list-style: none;
 }
 .footer div{
-	margin-left: 23px;
+	margin-left: 28px;
 	float: left;
 	margin-top: 20px
 }
@@ -211,6 +251,7 @@ body{
 	border-style: hidden;
 	text-indent:10px;
 	cursor: pointer;
+	font-family: georgia;
 }
 .danhmuc a{
 	display: block;
@@ -221,6 +262,9 @@ body{
 }
 .danhmuc a:hover{
 	color: #ff0000;
+}
+.sumit{
+	font-weight: 600;
 }
 .readmore a{
 	color: #874ca0;
